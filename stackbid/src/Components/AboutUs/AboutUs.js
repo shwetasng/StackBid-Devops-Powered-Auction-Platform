@@ -5,18 +5,10 @@ const AboutUs = () => {
   return (
     <div className="about-us-container">
       <div className="about-us-text">
-        <h1>About Us</h1>
+        <h2>StackBid: Bid Smarter, Win Better, Experience Excellence!</h2>
+        <h3>About Us</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-          fermentum semper porta. Nunc diam velit, adipiscing ut tristique
-          vitae, sagittis vel odio. Maecenas convallis ullamcorper ultricies.
-          Curabitur ornare, ligula a dapibus pellentesque, nisi lectus
-          vestibulum odio, nec convallis orci nisi nec dolor. Vestibulum
-          consequat ultricies ipsum et consectetur. Etiam varius pellentesque
-          bibendum. Integer eget orci non sapien iaculis feugiat id eget dolor.
-          Morbi malesuada nisi sit amet metus tincidunt blandit. Duis nec
-          ligula vel dui consequat tristique. Suspendisse potenti. Nam vitae
-          libero mauris. Suspendisse vitae libero mauris.
+          We are a team of motivated individuals who identified a gap and absence of a plaform that connects the seller and bidder with different needs. We found the absence of a generalised autction platform which is not specific to cater a single category only but serves the demand from diverse array. Our mission is to provide seller and bidder a plaform where they can experience transparency and excellence together.
         </p>
         <div className="buttons-container">
           <button className="sign-up-button">Sign Up</button>
@@ -24,7 +16,8 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="about-us-image">
-        <img src="path/to/image.jpg" alt="About Us" />
+        {/* Use require() function to dynamically load the image */}
+        <img src={require('./AboutUs.png').default} alt="About Us" />
       </div>
     </div>
   );
