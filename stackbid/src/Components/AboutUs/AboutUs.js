@@ -7,8 +7,8 @@ const AboutUs = () => {
       <div className="about-us-text">
         <h2>StackBid: Bid Smarter, Win Better, Experience Excellence!</h2>
         <h3>About Us</h3>
-        <p>
-          We are a team of motivated individuals who identified a gap and absence of a plaform that connects the seller and bidder with different needs. We found the absence of a generalised autction platform which is not specific to cater a single category only but serves the demand from diverse array. Our mission is to provide seller and bidder a plaform where they can experience transparency and excellence together.
+        <p className="about-us-content">
+          We are a team of motivated individuals who identified a gap and absence of a plaform that connects the seller and bidder with different needs. We found the absence of a generalised auction platform which is not specific to cater a single category only but serve the demands from diverse array. Our mission is to provide seller and bidder a plaform where they can experience transparency and excellence together.
         </p>
         <div className="buttons-container">
           <button className="sign-up-button">Sign Up</button>
