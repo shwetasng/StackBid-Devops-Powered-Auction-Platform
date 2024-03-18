@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutUs.css';
+import AboutUsImage from './AboutUs.png';
 
 const AboutUs = () => {
   return (
@@ -17,7 +17,7 @@ const AboutUs = () => {
       </div>
       <div className="about-us-image">
         {/* Use require() function to dynamically load the image */}
-        <img src={require('./AboutUs.png').default} alt="About Us" />
+        <img src={AboutUsImage} alt="About Us" />
       </div>
     </div>
   );
