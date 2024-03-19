@@ -1,0 +1,151 @@
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.filter-section {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.filter-section select {
+  margin-right: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: flex-end; /* Align options to the right */
+}
+
+.options > div {
+  display: flex;
+  align-items: center; /* Align items vertically within each option */
+  margin-left: 20px; /* Add space between options */
+}
+
+.options input[type="text"] {
+  padding: 5px;
+}
+
+.auction-content {
+  position: relative;
+  width: 100%; /* Ensure full width */
+}
+
+.auction-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.auction-card {
+  width: 300px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.auction-card img {
+  width: 100%;
+  height: 200px;
+}
+
+.auction-card .description {
+  padding: 10px 0;
+}
+
+.sold {
+  background-color: #b3e0ff;
+}
+
+.unsold {
+  background-color: #ffb3b3;
+}
+
+.metrics-display {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 600px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.metrics-display-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metrics-display-header h3 {
+  margin: 0;
+}
+
+.metrics-display-close {
+  cursor: pointer;
+  font-size: 18px;
+  color: #666;
+}
+
+.metrics-content {
+  margin-top: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Adjust z-index to ensure overlay is below metrics display */
+}
+
+
+
+.options-container {
+  background-color: #f2f2f2; /* Grey background */
+  padding: 10px; /* Add padding */
+  border-radius: 5px; /* Rounded corners */
+  margin-bottom: 20px; /* Add space between header and options */
+  display: flex;
+  justify-content: space-between; /* Align options to both ends */
+  color: black;
+  width: 100%;
+}
+
+.options-left {
+  display: flex;
+  align-items: center; /* Align items vertically within left options */
+}
+
+.options-left span {
+  font-weight: bold;
+}
+
+.options-right {
+  display: flex;
+}
+
+.options-right > div {
+  display: flex;
+  align-items: center; /* Align items vertically within each right option */
+  margin-left: 20px; /* Add space between options */
+}
+
+.options-right input[type="text"] {
+  padding: 5px;
+}
+
+
+
+
+
