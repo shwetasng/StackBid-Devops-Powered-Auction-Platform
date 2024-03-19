@@ -7,6 +7,8 @@ import Image2 from './Lamp.jpg';
 import Image3 from './Land.jpg';
 import Image4 from './AntiqueClock.jpg';
 import Image5 from './House.jpg';
+import Image6 from './Sofa.jpg';
+import Image7 from './Vase1.jpg';
 
 const MetricsDisplay = ({ data, onClose }) => {
   return (
@@ -54,6 +56,20 @@ const SellerHistory = () => {
       image: Image5,
       description: 'Sold on 15/03/2024',
       status: 'sold'
+    },
+    {
+      id: 6,
+      name: 'Royal Sofa Set',
+      image: Image6,
+      description: 'Sold on 19/03/2024',
+      status: 'unsold'
+    },
+    {
+      id:7,
+      name: 'Antique Vase',
+      image: Image7,
+      description: 'Sold on 19/03/2024',
+      status: 'unsold'
     },
     // Add more sample items as needed
   ]);
