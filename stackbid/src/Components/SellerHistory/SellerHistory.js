@@ -83,19 +83,21 @@ const SellerHistory = () => {
           <span>Explore Your History</span>
         </div>
         <div className="options-right">
-          <div className="sorting-option">
-            <FontAwesomeIcon icon={faSort} className="icon" />
-            <span>Sort By</span>
-            {/* Dropdown for sorting options */}
-          </div>
-          <div className="filtering-option">
-            <FontAwesomeIcon icon={faFilter} className="icon" />
-            <span>Filter By</span>
-            {/* Dropdown for filtering options */}
-          </div>
-          <div className="searching-option">
-            <FontAwesomeIcon icon={faSearch} className="icon" />
-            <input type="text" placeholder="Search" />
+          <div className="options-group">
+            <div className="sorting-option">
+              <FontAwesomeIcon icon={faSort} className="icon" />
+              <span>Sort By</span>
+              {/* Dropdown for sorting options */}
+            </div>
+            <div className="filtering-option">
+              <FontAwesomeIcon icon={faFilter} className="icon" />
+              <span>Filter By</span>
+              {/* Dropdown for filtering options */}
+            </div>
+            <div className="searching-option">
+              <FontAwesomeIcon icon={faSearch} className="icon" />
+              <input type="text" placeholder="Search" />
+            </div>
           </div>
         </div>
       </div>
