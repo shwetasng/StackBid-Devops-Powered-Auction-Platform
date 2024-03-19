@@ -11,6 +11,8 @@ import Image6 from './Sofa.jpg';
 import Image7 from './Vase1.jpg';
 
 const MetricsDisplay = ({ data, onClose }) => {
+  if (!data) return null; // Add a check to prevent accessing properties of null
+
   return (
     <div className="metrics-display" onClick={(e) => e.stopPropagation()}>
       <div className="metrics-content">
@@ -79,12 +81,12 @@ const SellerHistory = () => {
 
   const handleShowMetrics = (item) => {
     setShowMetrics(true);
-    setSelectedItem(item);
+    setSelectedItem(item); // Ensure that selectedItem is correctly updated
   };
 
   const handleCloseMetrics = () => {
     setShowMetrics(false);
-    setSelectedItem(null);
+    setSelectedItem(null); // Ensure that selectedItem is set to null
   };
 
   return (
