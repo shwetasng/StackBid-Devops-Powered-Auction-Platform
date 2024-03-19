@@ -6,6 +6,7 @@ import Image1 from './Car.jpg'; // Import images
 import Image2 from './Lamp.jpg';
 import Image3 from './Land.jpg';
 import Image4 from './AntiqueClock.jpg';
+import Image5 from './House.jpg';
 
 const MetricsDisplay = ({ data, onClose }) => {
   return (
@@ -46,6 +47,13 @@ const SellerHistory = () => {
       image: Image4,
       description: 'Sold on 15/03/2024',
       status: 'unsold'
+    },
+    {
+      id: 5,
+      name: 'Clock',
+      image: Image5,
+      description: 'Sold on 15/03/2024',
+      status: 'sold'
     },
     // Add more sample items as needed
   ]);
