@@ -6,6 +6,7 @@ import Feedback from "./Components/feedback/feedback";
 import SellerHistory from "./Components/SellerHistory/SellerHistory"; // Import SellerHistory component
 import "./App.css";
 import UploadItem from "./Components/UploadItem/UploadItem";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         {/* <Navbar/> */}
         {/* {<AboutUs/> } */}
         {/* <SellerHistory/> */}
+        <Footer />
       </header>
     </div>
   );
