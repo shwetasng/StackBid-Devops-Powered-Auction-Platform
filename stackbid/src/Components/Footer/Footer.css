@@ -1,11 +1,12 @@
 .footer {
     background-color: #000;
-    color: #fff;
+    color: #ffd700;
     padding: 20px 0;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 20px;
   }
   
   .container {
@@ -17,13 +18,13 @@
   }
   
   .social-media a {
-    color: #fff;
+    color: #ffd700;
     margin-right: 10px;
     font-size: 24px;
   }
   
   .links a {
-    color: #fff;
+    color: #ffd700;
     text-decoration: none;
     margin-right: 20px;
   }
