@@ -1,0 +1,54 @@
+/* history.css */
+
+.history-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow effect */
+}
+
+.history-container h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.bid-list {
+    margin-bottom: 30px;
+}
+
+.bid-item {
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+.bid-item:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    /* Shadow effect on hover */
+}
+
+.bid-item-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.bid-item-description {
+    color: #666;
+}
+
+.bid-item-status {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.bid-item-amount {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #007bff;
+}

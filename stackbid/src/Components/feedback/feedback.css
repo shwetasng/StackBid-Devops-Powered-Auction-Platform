@@ -1,7 +1,14 @@
+/* feedback.css */
+
 .feedback-container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow effect */
 }
 
 .feedback-form {
@@ -10,21 +17,33 @@
 }
 
 .input-group {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 label {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    color: #333;
+    /* Dark text color */
 }
 
 input[type='text'],
 input[type='email'],
 textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
+    transition: border-color 0.3s ease;
+    /* Smooth transition on focus */
+}
+
+input[type='text']:focus,
+input[type='email']:focus,
+textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    /* Blue border color when focused */
 }
 
 textarea {
@@ -33,15 +52,18 @@ textarea {
 
 button {
     width: 150px;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     background-color: #007bff;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
 }
 
 button:hover {
     background-color: #0056b3;
+    /* Darker shade of blue on hover */
 }
