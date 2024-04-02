@@ -1,9 +1,11 @@
 import React from 'react';
 import './UploadItem.css'; // Import the UploadItem.css file
+import img1 from './Painting1.jpg'; // Import the image file
 
 const UploadItem = () => {
   return (
     <div className="upload-item-container">
+      <img src={img1} alt="Upload Image" className="upload-item-image" />
       <div className="upload-form-wrapper">
         <div className="upload-form-left">
           <input type="text" placeholder="Item Name" />
