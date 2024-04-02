@@ -1,0 +1,35 @@
+.footer {
+    background-color: #000;
+    color: #ffd700;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .social-media a {
+    color: #ffd700;
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  .links a {
+    color: #ffd700;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
