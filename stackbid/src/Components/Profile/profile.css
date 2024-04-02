@@ -1,26 +1,44 @@
-/* profile.css */
+/* profile-golden-black.css */
 
+/* Styles for the blurred background image */
+body {
+    background-image: url('C: \Users\ABC\StackBid-Devops-Powered-Auction-Platform\stackbid\profile.jpeg');
+    /* Path to your background image */
+    background-size: cover;
+    /* Cover the entire viewport */
+    background-position: center;
+    /* Center the background image */
+    background-attachment: fixed;
+    /* Fixed background position */
+}
+
+/* Styles for the profile container */
 .profile-container {
     max-width: 600px;
     margin: auto;
     padding: 40px;
-    border: 1px solid #ccc;
+    border: 1px solid #000;
     border-radius: 10px;
-    background-color: #f9f9f9;
-    /* Light gray background */
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+    /* Black background color */
+    color: #ffd700;
+    /* Golden text color */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
     /* Soft shadow effect */
 }
 
 .profile-container h2 {
     margin-bottom: 30px;
-    color: #333;
+    color: #ffd700;
+    /* Golden text color */
 }
 
 .profile-container form label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #ffd700;
+    /* Golden text color */
 }
 
 .profile-container form input,
@@ -28,16 +46,23 @@
     width: 100%;
     padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ffd700;
+    /* Golden border color */
     border-radius: 5px;
     font-size: 16px;
+    background-color: #000;
+    /* Black background color */
+    color: #ffd700;
+    /* Golden text color */
 }
 
 .profile-container form button {
     width: 100%;
     padding: 12px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #ffd700;
+    /* Golden button color */
+    color: #000;
+    /* Black text color */
     border: none;
     border-radius: 5px;
     font-size: 16px;
@@ -47,8 +72,12 @@
 }
 
 .profile-container form button:hover {
-    background-color: #0056b3;
-    /* Darker shade of blue on hover */
+    background-color: #ffd700;
+    /* Golden button color on hover */
+    color: #000;
+    /* Black text color on hover */
+    transform: translateY(-2px);
+    /* Move the button slightly up on hover */
 }
 
 .error-message {
@@ -60,13 +89,14 @@
 .profile-container form input:focus,
 .profile-container form select:focus {
     outline: none;
-    border-color: #007bff;
-    /* Blue border color when focused */
+    border-color: #ffd700;
+    /* Golden border color when focused */
 }
 
 /* Additional styling for form button on hover */
 .profile-container form button:hover {
-    background-color: #0056b3;
+    background-color: #ffd700;
+    /* Golden button color on hover */
     transform: translateY(-2px);
     /* Move the button slightly up on hover */
 }

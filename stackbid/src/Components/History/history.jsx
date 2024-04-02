@@ -6,7 +6,7 @@ const History = ({ bidHistory }) => {
     <div className="history-container">
       <h2>Bid History</h2>
       <div className="bid-list">
-        {bidHistory.map((bid, index) => (
+        {bidHistory && bidHistory.map((bid, index) => (
           <div key={index} className="bid-item">
             <div>Item: {bid.itemName}</div>
             <div>Bid Amount: ${bid.bidAmount}</div>

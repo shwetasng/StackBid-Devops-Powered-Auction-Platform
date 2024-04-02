@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './cart.css'; // Import the CSS file for styling
 
 const Cart = ({ selectedBids }) => {
@@ -7,15 +7,19 @@ const Cart = ({ selectedBids }) => {
 
   // Function to calculate the total amount
   const calculateTotalAmount = () => {
-    let total = 0;
-    selectedBids.forEach((bid) => {
-      total += bid.amount; // Assuming each bid has an 'amount' property
-    });
-    setTotalAmount(total);
+    if (selectedBids && selectedBids.length > 0) {
+      let total = 0;
+      selectedBids.forEach((bid) => {
+        total += bid.amount; // Assuming each bid has an 'amount' property
+      });
+      setTotalAmount(total);
+    } else {
+      setTotalAmount(0); // If no selectedBids, set totalAmount to 0
+    }
   };
 
-  // Calculate the total amount when component mounts
-  useState(() => {
+  // Calculate the total amount when component mounts or when selectedBids change
+  useEffect(() => {
     calculateTotalAmount();
   }, [selectedBids]);
 
@@ -23,7 +27,7 @@ const Cart = ({ selectedBids }) => {
     <div className="cart-container">
       <h2>Cart</h2>
       <div className="cart-items">
-        {selectedBids.map((bid, index) => (
+        {selectedBids && selectedBids.map((bid, index) => (
           <div key={index} className="cart-item">
             <div>Item: {bid.itemName}</div>
             <div>Amount: ${bid.amount}</div>
