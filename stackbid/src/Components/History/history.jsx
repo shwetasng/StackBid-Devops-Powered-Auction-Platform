@@ -1,5 +1,5 @@
 import React from 'react';
-import './History.css'; // Import the CSS file for styling
+import './history.css'; // Import the CSS file for styling
 
 const History = ({ bidHistory }) => {
   return (

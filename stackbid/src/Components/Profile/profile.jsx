@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Profile.css'; // Import the CSS file for styling
+import './profile.css'; // Import the CSS file for styling
 
 const ProfileCustomer = () => {
   const [name, setName] = useState('');
