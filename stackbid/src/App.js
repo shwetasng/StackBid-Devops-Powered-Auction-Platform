@@ -24,7 +24,7 @@ function App() {
 
         {/*<Profile /> */}
         {/* <Feedback /> */}
-        {/* <UploadItem /> */}
+        <UploadItem />
         {/* <Navbar/> */}
         {/* {<AboutUs/> } */}
         {/* <SellerHistory/> */}
