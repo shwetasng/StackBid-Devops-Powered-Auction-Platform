@@ -1,47 +1,80 @@
-.login-container {
+/* auth.css */
+
+.auth-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    /* Soft shadow effect */
+}
+
+.auth-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.auth-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+.auth-button:hover {
+    background-color: #0056b3;
+    /* Darker shade of blue on hover */
+}
+
+.auth-form {
+    background-image: url('background.jpg');
+    /* Replace 'background.jpg' with your background image */
+    background-size: cover;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.auth-form-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    color: black;
+    min-height: 100vh;
 }
 
-.login-box {
-    width: 300px;
-    padding-left: 50px;
-    padding-right:50px;
-    padding-bottom: 50px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+.error-message {
+    color: red;
+    margin-top: 10px;
 }
 
-.input-group {
-    margin-bottom: 10px;
+/* Additional styling for form fields */
+.auth-input:focus {
+    outline: none;
+    border-color: #007bff;
+    /* Blue border color when focused */
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: #007bff;
-    color: #fff;
-    cursor: pointer;
-}
-
-button:hover {
+/* Additional styling for form button on hover */
+.auth-button:hover {
     background-color: #0056b3;
+    transform: translateY(-2px);
+    /* Move the button slightly up on hover */
 }
