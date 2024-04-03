@@ -1,47 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link instead of NavLink
-import './Navbar.css';
-import logo from'./logo.png'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
+  const navLinks = [
+    { path: '/', label: 'Home' },
+    { path: '/signup', label: 'SignUp' },
+    { path: '/seller-history', label: 'Seller History' },
+    { path: '/upload-item', label: 'Upload Item' },
+    { path: '/feedback', label: 'Feedback' },
+    { path: '/about-us', label: 'About Us' },
+  ];
+
   return (
-    <div className={`header__middle__menus`}>
-      <div className="logo-container">
-        <img
-          src={logo}  // Replace with the path to your logo image
-          alt="Logo"
-          className="logo"
-        />
-      </div>
-      <nav className="main-nav">
-        <ul className={`main-menu`}>
-          <li className={`menu-item`}>
-            <Link to="/home">Home</Link> {/* Use Link instead of NavLink */}
+    <nav className="navbar">
+      <ul className="nav-links">
+        {navLinks.map((link) => (
+          <li key={link.path}>
+            <Link to={link.path}>{link.label}</Link>
           </li>
-          <li className={`menu-item`}>
-            <Link to="/about">About</Link> {/* Use Link instead of NavLink */}
-          </li>
-          <li className={`menu-item`}>
-            <Link to="/events">Events</Link> {/* Use Link instead of NavLink */}
-          </li>
-          <li className={`menu-item`}>
-            <Link to="/resources">Resources</Link> {/* Use Link instead of NavLink */}
-          </li>
-          <li className={`menu-item`}>
-            <Link to="/alumni">Alumni Talk</Link> {/* Use Link instead of NavLink */}
-          </li>
-          <li className={`menu-item`}>
-            <Link to="/achievements">Achievements</Link> {/* Use Link instead of NavLink */}
-          </li>
-          <li className={`menu-item`}>
-            <Link to="/gallery">Gallery</Link> {/* Use Link instead of NavLink */}
-          </li>
-          <li className={`menu-item`}>
-            <Link to="/feedback">Feedback</Link> {/* Use Link instead of NavLink */}
-          </li>
-        </ul>
-      </nav>
-    </div>
+        ))}
+      </ul>
+    </nav>
   );
 };
 
