@@ -16,10 +16,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <Login /> */}
+        <Login />
         {/* <SignUp /> */}
         {/* <History /> */}
-        <Cart />
+        {/* <Cart /> */}
         {/* <Profile /> */}
         {/* <Feedback /> */}
         {/* <UploadItem /> */}
