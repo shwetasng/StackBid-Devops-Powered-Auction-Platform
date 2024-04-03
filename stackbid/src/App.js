@@ -18,19 +18,16 @@ function App() {
       <header className="App-header">
         {/* <Login /> */}
         {/* <SignUp /> */}
+        {/* <History /> */}
+        {/* <Cart /> */}
         {/* <Profile /> */}
         {/* <Feedback /> */}
         {/* <UploadItem /> */}
         {/* {<AboutUs/> } */}
         {/* <SellerHistory/> */}
-        
-        {/* <History /> */}
-        {/* <Cart /> */}
-        {/* <Navbar/> */}
-        <Footer />
+        {/* <Footer /> */}
       </header>
     </div>
-   
   );
 }
 
