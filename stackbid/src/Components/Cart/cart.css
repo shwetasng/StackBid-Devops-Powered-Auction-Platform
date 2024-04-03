@@ -14,12 +14,19 @@ body {
 
 /* Styles for the cart container */
 .cart-container {
-    max-width: 800px;
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 250vh;
+        background-color: #e4bd63;
+        
+    max-width: 500px;
     margin: 0 auto;
     padding: 40px;
     border: 1px solid #ffd700;
     /* Golden border color */
-    border-radius: 8px;
+    border-radius: 80px;
     background-color: #000;
     /* Black background color */
     color: #ffd700;
