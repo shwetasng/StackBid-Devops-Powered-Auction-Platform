@@ -18,7 +18,7 @@ function App() {
       <header className="App-header">
         {/* <Login /> */}
         {/* <SignUp /> */}
-        <History />
+        {/* <History /> */}
         {/* <Cart /> */}
         {/* <Profile /> */}
         {/* <Feedback /> */}
