@@ -23,7 +23,6 @@ function App() {
         {/* <Profile /> */}
         {/* <Feedback /> */}
         {/* <UploadItem /> */}
-        {/* <Navbar/> */}
         {/* {<AboutUs/> } */}
         <SellerHistory />
         {/* <Footer /> */}
