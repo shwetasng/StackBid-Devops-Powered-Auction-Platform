@@ -17,15 +17,16 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <Login /> */}
-        <SignUp />
-        {/* <History /> */}
-        {/* <Cart /> */}
+        {/* <SignUp /> */}
         {/* <Profile /> */}
         {/* <Feedback /> */}
         {/* <UploadItem /> */}
-        {/* <Navbar/> */}
         {/* {<AboutUs/> } */}
         {/* <SellerHistory/> */}
+        
+        {/* <History /> */}
+        {/* <Cart /> */}
+        {/* <Navbar/> */}
         <Footer />
       </header>
     </div>
