@@ -25,7 +25,7 @@ function App() {
         {/* <UploadItem /> */}
         {/* <Navbar/> */}
         {/* {<AboutUs/> } */}
-        {/* <SellerHistory /> */}
+        {/* <SellerHistory/> */}
         {/* <Footer /> */}
       </header>
     </div>
