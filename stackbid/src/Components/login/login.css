@@ -1,0 +1,78 @@
+/* login.css */
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    /* Black background */
+    background-image: url('C: \Users\ABC\StackBid-Devops-Powered-Auction-Platform\stackbid\public\image.jpeg');
+    /* Specify the path to your background image */
+    background-size: cover;
+    background-position: center;
+    /* Center the background image */
+    color: #ffd700;
+    /* Golden text color */
+}
+
+.login-form {
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent black background */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Soft shadow effect */
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    color: #ffd700;
+    /* Golden text color */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffd700;
+    /* Golden text color */
+}
+
+input[type='text'],
+input[type='password'] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffd700;
+    /* Golden border color */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    color: #ffd700;
+    /* Golden text color */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffd700;
+    /* Golden button color */
+    color: #000;
+    /* Black text color */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #cca300;
+    /* Darker shade of golden on hover */
+}

@@ -1,19 +1,37 @@
-/* history.css */
+/* history-golden-black.css */
 
+/* Styles for the blurred background image */
+body {
+    background-image: url('C: \Users\ABC\StackBid-Devops-Powered-Auction-Platform\stackbid\public\history.jpeg');
+    /* Path to your background image */
+    background-size: cover;
+    /* Cover the entire viewport */
+    background-position: center;
+    /* Center the background image */
+    background-attachment: fixed;
+    /* Fixed background position */
+}
+
+/* Styles for the history container */
 .history-container {
     max-width: 800px;
     margin: auto;
     padding: 30px;
-    border: 1px solid #ddd;
+    border: 1px solid #ffd700;
+    /* Golden border color */
     border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+    /* Black background color */
+    color: #ffd700;
+    /* Golden text color */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     /* Soft shadow effect */
 }
 
 .history-container h2 {
     margin-bottom: 30px;
-    color: #333;
+    color: #ffd700;
+    /* Golden text color */
 }
 
 .bid-list {
@@ -22,10 +40,14 @@
 
 .bid-item {
     padding: 20px;
-    border: 2px solid #ccc;
+    border: 2px solid #ffd700;
+    /* Golden border color */
     border-radius: 8px;
     margin-bottom: 20px;
-    background-color: #f9f9f9;
+    background-color: #000;
+    /* Black background color */
+    color: #ffd700;
+    /* Golden text color */
 }
 
 .bid-item:hover {
@@ -35,11 +57,11 @@
 
 .bid-item-title {
     font-weight: bold;
-    color: #333;
 }
 
 .bid-item-description {
     color: #666;
+    /* Lighter text color */
 }
 
 .bid-item-status {
