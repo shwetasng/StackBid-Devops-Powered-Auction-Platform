@@ -1,76 +1,157 @@
-/* history-golden-black.css */
-
-/* Styles for the blurred background image */
-body {
-    background-image: url('C: \Users\ABC\StackBid-Devops-Powered-Auction-Platform\stackbid\public\history.jpeg');
-    /* Path to your background image */
-    background-size: cover;
-    /* Cover the entire viewport */
-    background-position: center;
-    /* Center the background image */
-    background-attachment: fixed;
-    /* Fixed background position */
-}
-
-/* Styles for the history container */
-.history-container {
-    max-width: 800px;
-    margin: auto;
-    padding: 30px;
-    border: 1px solid #ffd700;
-    /* Golden border color */
-    border-radius: 8px;
-    background-color: #000;
-    /* Black background color */
-    color: #ffd700;
-    /* Golden text color */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    /* Soft shadow effect */
-}
-
-.history-container h2 {
-    margin-bottom: 30px;
-    color: #ffd700;
-    /* Golden text color */
-}
-
-.bid-list {
-    margin-bottom: 30px;
-}
-
-.bid-item {
+.metrics-display {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
     padding: 20px;
-    border: 2px solid #ffd700;
-    /* Golden border color */
-    border-radius: 8px;
-    margin-bottom: 20px;
-    background-color: #000;
-    /* Black background color */
-    color: #ffd700;
-    /* Golden text color */
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.bid-item:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    /* Shadow effect on hover */
+.metrics-display-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.bid-item-title {
-    font-weight: bold;
+.metrics-display-header h3 {
+    margin: 0;
 }
 
-.bid-item-description {
+.metrics-display-close {
+    cursor: pointer;
+    font-size: 18px;
     color: #666;
-    /* Lighter text color */
 }
 
-.bid-item-status {
-    margin-top: 10px;
-    font-style: italic;
+.metrics-content {
+    margin-top: 20px;
 }
 
-.bid-item-amount {
-    margin-top: 10px;
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.options-container {
+    background-color: rgb(208, 207, 207);
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.options-left {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+
+.options-left span {
     font-weight: bold;
-    color: #007bff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    color: black;
+}
+
+.options-right {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.options-group {
+    display: flex;
+}
+
+.options-group>div {
+    margin-right: 20px;
+    /* Add space between options */
+}
+
+.options-right input[type="text"] {
+    padding: 5px;
+}
+
+.history-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filter-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.filter-section select {
+    margin-right: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    /* Align options to the right */
+}
+
+.options>div {
+    display: flex;
+    align-items: center;
+    /* Align items vertically within each option */
+    margin-left: 20px;
+    /* Add space between options */
+}
+
+.options input[type="text"] {
+    padding: 5px;
+}
+
+.auction-content {
+    position: relative;
+    width: 100%;
+    /* Ensure full width */
+}
+
+.auction-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.auction-card {
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auction-card img {
+    width: 100%;
+    height: 250px;
+}
+
+
+.auction-card .description {
+    padding: 2px 0;
+}
+
+.sold {
+    background-color: #b3e0ff;
+}
+
+.unsold {
+    background-color: #ffb3b3;
 }
