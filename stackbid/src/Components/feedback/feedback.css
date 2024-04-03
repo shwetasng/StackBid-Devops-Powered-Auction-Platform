@@ -9,11 +9,13 @@
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     /* Soft shadow effect */
+    margin-bottom: 50px; /* Add margin at the bottom to create space for the footer */
 }
 
 .feedback-form {
     display: flex;
     flex-direction: column;
+    min-height: calc(100vh - 150px); /* Adjust based on the height of the footer */
 }
 
 .input-group {

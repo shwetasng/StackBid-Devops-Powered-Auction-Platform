@@ -9,13 +9,14 @@ import login1 from "./Components/login/Signup";
 import History from "./Components/History/history";
 import Cart from "./Components/Cart/cart";
 import Profile from "./Components/Profile/profile";
+import Reviews from "./Components/Reviews/Review";
 
 import Footer from "./Components/Footer/Footer";
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/*<login /> */}
+        {/* <login /> */}
     {/* <Profile /> */}
 
         {/* < History /> */}
@@ -27,6 +28,7 @@ function App() {
         {/* <Navbar/> */}
         {/* {<AboutUs/> } */}
         {/* <SellerHistory/> */}
+        <Reviews />
         <Footer />
       </header>
     </div>
