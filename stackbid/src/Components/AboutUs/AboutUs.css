@@ -1,3 +1,9 @@
+body {
+  background-color: black; /* Set background color of the page to black */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
 .about-us-container {
   display: flex;
   justify-content: space-between;
@@ -12,10 +18,13 @@
 }
 
 .about-us-content {
+  font-family: Arial, Helvetica, sans-serif;
   width: 70%; 
   padding: 20px; 
   margin-right: 10px; 
   margin-left: 160px;
+  color: white;
+  font-size: 22px;
 }
 
 .about-us-image img {
@@ -32,15 +41,16 @@
 
 .sign-up-button,
 .sign-in-button {
-  padding: 10px 20px;
+  padding: 6px 12px;
   margin-right: 10px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 100px;
   cursor: pointer;
+
 }
 
 .sign-up-button:hover,
@@ -49,12 +59,14 @@
 }
 
 .about-us-text h3 {
-  padding: 8px 50px;
+  padding: 10px 50px;
+  font-size: 40px;
   background-color: goldenrod;
   border-radius: 10px;
   color: black;
   width: 50%;
   margin: 0 220px;
+  text-align: center; 
 }
 
 .about-us-text h2 {
