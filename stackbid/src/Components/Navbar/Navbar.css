@@ -15,6 +15,7 @@
 
 .brand h1 {
   margin: 0;
+  color: #FFD700;
 }
 
 .nav-links {
@@ -30,7 +31,7 @@
 
 .nav-item {
   text-decoration: none;
-  color: golden;
+  color: #FFD700;
   padding: 0.5rem 1rem;
   border-bottom: 2px solid transparent;
   transition: border-bottom 0.3s ease;
@@ -38,4 +39,5 @@
 
 .nav-item:hover {
   border-bottom: 2px solid golden;
+  color: #FFFFFF;
 }
