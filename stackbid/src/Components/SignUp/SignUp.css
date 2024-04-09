@@ -39,7 +39,7 @@ body {
 }
 
 .form-group {
-    margin-bottom:50px;
+    margin-bottom: 30px;
 }
 
 label {
@@ -49,7 +49,8 @@ label {
 
 input[type='text'],
 input[type='email'],
-input[type='password'] {
+input[type='password'],
+select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ffd700; /* Golden border */

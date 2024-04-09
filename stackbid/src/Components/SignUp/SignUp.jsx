@@ -3,7 +3,6 @@
 import React from 'react';
 import './SignUp.css';
 
-
 const SignUp = () => {
   return (
     <div className="signup-container">
@@ -11,12 +10,23 @@ const SignUp = () => {
         <h2>Sign Up</h2>
         <form>
           <div className="form-group">
-            <label htmlFor="username">Username</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" />
+            <label htmlFor="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" />
           </div>
           <div className="form-group">
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" placeholder="Enter your email" />
+          </div>
+          <div className="form-group">
+            <label htmlFor="role">Role</label>
+            <select id="role" name="role">
+              <option value="seller">Seller</option>
+              <option value="customer">Customer</option>
+            </select>
           </div>
           <div className="form-group">
             <label htmlFor="password">Password</label>
