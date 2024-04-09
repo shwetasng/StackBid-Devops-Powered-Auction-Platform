@@ -1,4 +1,5 @@
 /* Login.css */
+
 .login-container {
     display: flex;
     justify-content: center;
@@ -25,17 +26,14 @@
     color: #ffd700;
 }
 
-.login-form input {
+.login-form input,
+.login-form select {
     width: 100%;
     margin-bottom: 15px;
     padding: 5px;
     border: none;
     border-radius: 5px;
     color: #ffd700;
-
-   
-        
-
 }
 
 .login-form button {
@@ -43,16 +41,11 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
-    /* background-color: #000;
-
-    color: #ffd700; */
-    background-color: #ffd700;
-        /* Golden button color */
-        color: #000;
-        /* Black text color */
+    background-color: #ffd700; /* Golden button color */
+    color: #000; /* Black text color */
     cursor: pointer;
 }
 
 .login-form button:hover {
     background-color: #c0a300;
-}
+} 

@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from "./Components/Navbar/Navbar";
 import AboutUs from "./Components/AboutUs/AboutUs";
 import SellerHistory from "./Components/SellerHistory/SellerHistory"; // Import SellerHistory component
@@ -14,20 +15,18 @@ import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        {/* <Login /> */}
-        <SignUp />
-        {/* <History /> */}
-        {/* <Cart /> */}
-        {/* <Profile /> */}
-        {/* <Feedback /> */}
-        {/* <UploadItem /> */}
-        {/* {<AboutUs/> } */}
-        {/* <SellerHistory /> */}
-        {/* <Footer /> */}
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<AboutUs />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signUp" element={<SignUp />} />
+        <Route path="/history" element={<History />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/feedback" element={<Feedback />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

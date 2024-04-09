@@ -1,24 +1,41 @@
+/* Navbar.css */
+
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #f0f0f0;
+  background-color: black;
+  color: golden;
 }
 
-.navbar ul {
+.brand h1 {
+  margin: 0;
+}
+
+.nav-links {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
 
-.navbar li {
+.nav-links li {
   margin-right: 1rem;
 }
 
-.navbar a {
+.nav-item {
   text-decoration: none;
-  color: #333;
+  color: golden;
   padding: 0.5rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.nav-item:hover {
+  border-bottom: 2px solid golden;
 }
